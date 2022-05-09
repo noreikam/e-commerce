@@ -7,7 +7,7 @@ const sequelize = require('../../config/connection');
 // get all products
 router.get('/', (req, res) => {
   Product.findAll({
-    order: [['id', 'ASC']],
+    order: [['id', 'DESC']],
     attributes: [
       'id',
       'product_name',
